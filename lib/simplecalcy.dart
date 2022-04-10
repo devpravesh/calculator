@@ -1,5 +1,3 @@
-// ignore_for_file: deprecated_member_use
-
 import 'package:flutter/material.dart';
 import 'package:math_expressions/math_expressions.dart';
 
@@ -11,6 +9,8 @@ class SimpleCalculator extends StatefulWidget {
 }
 
 class _SimpleCalculatorState extends State<SimpleCalculator> {
+  Color numerickeycolor = Colors.grey;
+
   String equation = "0";
   String result = "0";
   String expression = "";
@@ -120,24 +120,24 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
                       buildButton("÷", 1, Colors.blue),
                     ]),
                     TableRow(children: [
-                      buildButton("7", 1, Colors.black87),
-                      buildButton("8", 1, Colors.black87),
-                      buildButton("9", 1, Colors.black87),
+                      buildButton("7", 1, numerickeycolor),
+                      buildButton("8", 1, numerickeycolor),
+                      buildButton("9", 1, numerickeycolor),
                     ]),
                     TableRow(children: [
-                      buildButton("4", 1, Colors.black87),
-                      buildButton("5", 1, Colors.black87),
-                      buildButton("6", 1, Colors.black87),
+                      buildButton("4", 1, numerickeycolor),
+                      buildButton("5", 1, numerickeycolor),
+                      buildButton("6", 1, numerickeycolor),
                     ]),
                     TableRow(children: [
-                      buildButton("1", 1, Colors.black87),
-                      buildButton("2", 1, Colors.black87),
-                      buildButton("3", 1, Colors.black87),
+                      buildButton("1", 1, numerickeycolor),
+                      buildButton("2", 1, numerickeycolor),
+                      buildButton("3", 1, numerickeycolor),
                     ]),
                     TableRow(children: [
-                      buildButton(".", 1, Colors.black87),
-                      buildButton("0", 1, Colors.black87),
-                      buildButton("00", 1, Colors.black87),
+                      buildButton(".", 1, numerickeycolor),
+                      buildButton("0", 1, numerickeycolor),
+                      buildButton("00", 1, numerickeycolor),
                     ]),
                   ],
                 ),
